@@ -2,6 +2,8 @@
 
 :root {
   --background: #ECF4E8;
+  --middleground: #CBF3BB;
+  --middleground-2: #ABE7B2;
   --foreground: #93BFC7;
 }
 
@@ -15,6 +17,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ECF4E8;
+    --middleground: #CBF3BB;
+    --middleground-2: #ABE7B2;
     --foreground: #93BFC7;
   }
 }

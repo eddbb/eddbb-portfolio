@@ -1,3 +1,6 @@
+import projects from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard";
+
 export default function ProjectsPage() {
   return (
     <main>
@@ -7,6 +10,12 @@ export default function ProjectsPage() {
             <p className="text-center max-w-xl">
               Here are some of the projects I've been working on recently.
             </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {projects.map((project) => (
+                <ProjectCard key={project.slug} project={project} />
+              ))}
+            </div>
         </div>
     </main>
   );
