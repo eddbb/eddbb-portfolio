@@ -6,7 +6,7 @@ export default function ProjectDetail({ project }: { project: any }) {
   }
   return (
     <main>
-      <div className="flex flex-col items-center gap-6 mt-6">
+      <div className="flex flex-col items-center gap-6 mt-6 pb-10">
             <h1 className="text-4xl">{project.title}</h1>
             <div className="h-0.5 bg-foreground w-72 rounded-full"></div>
             <p className="text-center max-w-xl">{project.short_description}</p>
@@ -22,15 +22,13 @@ export default function ProjectDetail({ project }: { project: any }) {
                 Demo
               </a>
             </div>
-            
-
             <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
               <p className="font-bold">Description</p>
-              {project.description}
+              <p className="whitespace-pre-line">{project.description}</p>
             </div>
             <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
               <p className="font-bold">Contributions</p>
-              {project.description}
+              <p className="whitespace-pre-line">{project.contributions}</p>
             </div>
             <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
               <p className="font-bold">Tech Stack</p>
@@ -40,30 +38,6 @@ export default function ProjectDetail({ project }: { project: any }) {
               <p className="font-bold">Pictures</p>
               <img src={project.image} alt={project.title} className="w-3xl rounded-xl" />
             </div>
-      </div>
-
-      
-
-      
-      <p className="text-gray-700 mb-4"></p>
-      <p className="text-sm text-gray-500 mb-4">
-        Technologies: {project.tech.join(", ")}
-      </p>
-      <div className="flex gap-4">
-        <a
-          href={project.github}
-          target="_blank"
-          className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900"
-        >
-          View Code
-        </a>
-        <a
-          href={project.demo}
-          target="_blank"
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          Live Demo
-        </a>
       </div>
     </main>
   );

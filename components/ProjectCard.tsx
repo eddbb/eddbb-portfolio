@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: any }) {
-  if (!project.image) {
-    project.image = "/projects/default.webp";
+  if (!project.image_header) {
+    project.image_header = "/projects/default.webp";
   }
   return (
     <Link href={`/projects/${project.slug}`}>
-      <div className="rounded-2xl overflow-hidden hover:shadow-[0_4px_6px_1px_var(--middleground),0_2px_4px_1px_var(--middleground)] transition relative">
+      <div className="w-lg rounded-2xl overflow-hidden hover:shadow-[0_4px_6px_1px_var(--middleground),0_2px_4px_1px_var(--middleground)] transition relative">
         
-        <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+        <img src={project.image_header} alt={project.title} className="w-full h-48 object-cover" />
 
         <div className="absolute top-2 left-2 bg-foreground rounded-md text-background">
           <h2 className="text-sm font-bold p-1">{project.status}</h2>
