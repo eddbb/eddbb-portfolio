@@ -1,28 +1,44 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
-    return (
-      <nav className="w-full bg-foreground sticky top-0 z-50">
-        <div className="max-w mx-auto px-6 py-4 flex justify-center gap-32 text-background">
-          <Link href="/" className="">
-            Home
-          </Link>
-          <Link href="/projects" className="">
-            Projects
-          </Link>
-          <Link href="/about" className="">
-            About
-          </Link>
-          <Link href="/contact" className="">
-            Contact
-          </Link>
-        </div>
-      </nav>
-    );
+  const lineWidths: Record<string, [string, string, string]> = {
+    "/": ["10%", "15%", "75%"],
+    "/projects": ["20%", "30%", "50%"],
+    "/about": ["30%", "50%", "20%"],
+    "/contact": ["40%", "60%", "0%"],
+  };
 
+  const [leftWidth, middleWidth, rightWidth] =
+    lineWidths[pathname || "/"] || ["50%", "50%", "0%"];
+
+  return (
+    <nav className="w-full bg-foreground sticky top-0 z-50">
+      <div className="max-w mx-auto px-6 py-4 flex justify-center gap-32 text-background">
+        <Link href="/">Home</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
+
+      <div className="flex h-1 w-full">
+        <div
+          className="bg-[#CBF3BB] transition-all duration-500"
+          style={{ width: leftWidth }}
+        ></div>
+        <div
+          className="bg-[#ABE7B2] transition-all duration-500 rounded-r-full"
+          style={{ width: middleWidth }}
+        ></div>
+        <div
+          className="bg-foreground transition-all duration-500"
+          style={{ width: rightWidth }}
+        ></div>
+      </div>
+    </nav>
+  );
 }
