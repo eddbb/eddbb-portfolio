@@ -9,12 +9,15 @@ export default function Navbar() {
   const lineWidths: Record<string, [string, string, string]> = {
     "/": ["10%", "15%", "75%"],
     "/projects": ["20%", "30%", "50%"],
-    "/about": ["30%", "50%", "20%"],
+    "/about": ["30%", "45%", "25%"],
     "/contact": ["40%", "60%", "0%"],
   };
 
-  const [leftWidth, middleWidth, rightWidth] =
-    lineWidths[pathname || "/"] || ["50%", "50%", "0%"];
+  const [leftWidth, middleWidth, rightWidth] = lineWidths[pathname || "/"] || [
+    "20%",
+    "30%",
+    "50%",
+  ];
 
   return (
     <nav className="w-full bg-foreground sticky top-0 z-50">
@@ -27,11 +30,11 @@ export default function Navbar() {
 
       <div className="flex h-1 w-full">
         <div
-          className="bg-[#CBF3BB] transition-all duration-500"
+          className="bg-(--middleground) transition-all duration-500"
           style={{ width: leftWidth }}
         ></div>
         <div
-          className="bg-[#ABE7B2] transition-all duration-500 rounded-r-full"
+          className="bg-(--middleground-2) transition-all duration-500 rounded-r-full"
           style={{ width: middleWidth }}
         ></div>
         <div
