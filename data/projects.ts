@@ -24,7 +24,7 @@ const projects = [
     description: "This is an ongoing project in the course DD2430 where we have been tasked to combine Reinforcement Learning (RL) with Large Language Models (LLMs) to create adaptive and intelligent game agents.",
     contributions: ``,
     image_header: "/projects/ea-seed/ea-seed.webp",
-    image: "/projects/ea-seed/ea-seed.webp",
+    image: "",
     tech: ["Unity, C#, Python"],
     github: "",
     demo: "",

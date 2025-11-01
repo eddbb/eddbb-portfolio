@@ -1,6 +1,23 @@
+"use client";
+
+import { motion } from "framer-motion";
 import projects from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 import Underline from "@/components/Underline";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
 
 export default function ProjectsPage() {
   return (
@@ -12,11 +29,18 @@ export default function ProjectsPage() {
           Here are some of the projects I've been working on recently.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="grid md:grid-cols-2 gap-8"
+        >
           {projects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
+            <motion.div key={project.slug} variants={item}>
+              <ProjectCard project={project} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </main>
   );
