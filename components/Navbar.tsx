@@ -13,8 +13,11 @@ export default function Navbar() {
     "/contact": ["40%", "60%", "0%"],
   };
 
-  const [leftWidth, middleWidth, rightWidth] =
-    lineWidths[pathname || "/"] || ["20%", "30%", "50%"];
+  const [leftWidth, middleWidth, rightWidth] = lineWidths[pathname || "/"] || [
+    "20%",
+    "30%",
+    "50%",
+  ];
 
   return (
     <nav className="w-full bg-foreground sticky top-0 z-50">
