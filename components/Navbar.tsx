@@ -9,7 +9,7 @@ export default function Navbar() {
   const lineWidths: Record<string, [string, string, string]> = {
     "/": ["10%", "15%", "75%"],
     "/projects": ["20%", "30%", "50%"],
-    "/about": ["30%", "50%", "20%"],
+    "/about": ["30%", "45%", "25%"],
     "/contact": ["40%", "60%", "0%"],
   };
 
