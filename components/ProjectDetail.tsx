@@ -1,11 +1,12 @@
 import { FaGithub, FaPlay } from "react-icons/fa";
+import Underline from "./Underline";
 
 export default function ProjectDetail({ project }: { project: any }) {
   return (
     <main>
-      <div className="flex flex-col items-center gap-6 mt-6 pb-10">
-        <h1 className="text-4xl">{project.title}</h1>
-        <div className="h-0.5 bg-foreground w-72 rounded-full"></div>
+      <div className="flex flex-col items-center gap-6 mt-6 px-6 pb-10">
+        <h1 className="text-4xl text-center">{project.title}</h1>
+        <Underline />
         <p className="text-center max-w-xl">{project.short_description}</p>
         <div className="flex gap-4">
           {project.github ? (
@@ -41,27 +42,27 @@ export default function ProjectDetail({ project }: { project: any }) {
           )}
         </div>
 
-        <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
+        <div className="bg-foreground text-background text-left md:w-3xl w-full rounded-2xl p-4">
           <p className="font-bold">Description</p>
           <p className="whitespace-pre-line">{project.description}</p>
         </div>
         {project.contributions ? (
-          <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
+          <div className="bg-foreground text-background text-left md:w-3xl w-full rounded-2xl p-4">
             <p className="font-bold">Contributions</p>
             <p className="whitespace-pre-line">{project.contributions}</p>
           </div>
         ) : null}
-        <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
+        <div className="bg-foreground text-background text-left md:w-3xl w-full rounded-2xl p-4">
           <p className="font-bold">Tech Stack</p>
           {project.tech.join(", ")}
         </div>
         {project.image ? (
-          <div className="bg-foreground text-background text-left w-3xl rounded-2xl p-4">
+          <div className="bg-foreground text-background text-left md:w-3xl w-full rounded-2xl p-4">
             <p className="font-bold">Pictures</p>
             <img
               src={project.image}
               alt={project.title}
-              className="w-3xl rounded-xl"
+              className="md:w-3xl rounded-xl"
             />
           </div>
         ) : null}

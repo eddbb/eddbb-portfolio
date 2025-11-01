@@ -6,7 +6,7 @@ export default function ProjectCard({ project }: { project: any }) {
   }
   return (
     <Link href={`/projects/${project.slug}`}>
-      <div className="w-lg rounded-2xl overflow-hidden hover:shadow-[0_4px_6px_1px_var(--middleground),0_2px_4px_1px_var(--middleground)] transition relative">
+      <div className="md:w-sm lg:w-lg rounded-2xl overflow-hidden hover:shadow-[0_4px_6px_1px_var(--middleground),0_2px_4px_1px_var(--middleground)] transition relative">
         <img
           src={project.image_header}
           alt={project.title}
