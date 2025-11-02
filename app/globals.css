@@ -79,10 +79,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #ffffff;
-    --middleground: #ffffff;
-    --middleground-2: #ffffff;
-    --foreground: #ffffff;
+    --background: #ecf4e8;
+    --middleground: #cbf3bb;
+    --middleground-2: #abe7b2;
+    --foreground: #93bfc7;
   }
 }
 
