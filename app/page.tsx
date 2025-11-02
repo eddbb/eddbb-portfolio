@@ -1,4 +1,5 @@
 import Underline from "@/components/Underline";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,8 @@ export default function HomePage() {
           Technology, specializing in data science, machine learning and
           software development.
         </p>
+
+        <ThemeToggle />
       </div>
     </div>
   );
