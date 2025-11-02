@@ -19,8 +19,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "eddbb",
-  description: "Porfolio website",
+  title: "Edvin Blomgren - Portfolio",
+  description: "Portfolio website",
 };
 
 export default function RootLayout({
@@ -30,9 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased`}>
         <Navbar />
         {children}
       </body>
