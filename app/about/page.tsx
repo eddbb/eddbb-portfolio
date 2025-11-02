@@ -26,7 +26,7 @@ export default function AboutPage() {
             className="h-90 rounded-2xl border-2 border-foreground object-cover"
           />
         </div>
-        <p className="text-center max-w-3xl">
+        <p className="text-center md:max-w-3xl max-w-sm">
           Through my travels across Asia, I’ve been fascinated by how
           differently each society integrates technology into daily life, from
           mobile payment ecosystems in Southeast Asia to public infrastructure
