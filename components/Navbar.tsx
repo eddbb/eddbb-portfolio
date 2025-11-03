@@ -38,26 +38,34 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`md:hidden flex flex-col items-center gap-4 text-background overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-96 py-4" : "max-h-0"
+        className={`md:hidden flex flex-col items-center text-background overflow-hidden transition-all duration-300 ${
+          isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <Link href="/" onClick={() => setIsOpen(false)}>
-          Home
-        </Link>
-        <Link href="/projects" onClick={() => setIsOpen(false)}>
-          Projects
-        </Link>
-        <Link href="/about" onClick={() => setIsOpen(false)}>
-          About
-        </Link>
-        <Link href="/contact" onClick={() => setIsOpen(false)}>
-          Contact
-        </Link>
+        <div className="text-background bg-foreground w-full text-center py-2">
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+        </div>
+        <div className="text-foreground bg-background w-full text-center py-2">
+          <Link href="/projects" onClick={() => setIsOpen(false)}>
+            Projects
+          </Link>
+        </div>
+        <div className="text-background bg-foreground w-full text-center py-2">
+          <Link href="/about" onClick={() => setIsOpen(false)}>
+            About
+          </Link>
+        </div>
+        <div className="text-foreground bg-background w-full text-center py-2">
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
+            Contact
+          </Link>
+        </div>
       </div>
 
       <div
-        className="md:hidden flex flex-col cursor-pointer gap-1 items-center"
+        className="md:hidden flex flex-col cursor-pointer items-center"
         onClick={toggleMenu}
       >
         {isOpen ? (
