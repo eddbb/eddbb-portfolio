@@ -10,7 +10,7 @@ export default function HomePage() {
         <Underline />
         <div className="flex flex-col md:flex-row-reverse gap-4 md:gap-8 items-center">
           <img
-            src="/me/homec.webp"
+            src="/me/home-2.webp"
             alt="Edvin Blomgren"
             className="h-50 w-50 rounded-full border-2 border-foreground object-cover text-center"
           />
