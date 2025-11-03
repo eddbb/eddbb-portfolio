@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: { project: any }) {
         <div className="p-4 bg-foreground text-background rounded-t-lg -mt-6 relative z-10">
           <h3 className="text-xl mb-2">{project.title}</h3>
           <p className="text-sm mb-2">{project.short_description}</p>
-          <div className="text-sm text-(--middleground-2)">
+          <div className="text-sm text-(--middleground)">
             {project.tech.slice(0, 3).join(", ")} and more...
           </div>
         </div>

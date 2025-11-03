@@ -9,12 +9,12 @@ export default function AboutPage() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-3">
           <p className="text-center max-w-sm">
             On a typical day, you might find me coding, playing video games,
-            practicing guitar and piano, or rewatching Breaking Bad for the
-            third time. I’ve always been someone who enjoys building, learning,
-            and experimenting, whether that means going on a new life adventure,
-            or as simple as building computers just to see how they work. I’m
-            the kind of person who gets energised by challenges and discovery.
-            This mindset has taken me from pursuing my degree at KTH to
+            practicing guitar, or rewatching Breaking Bad for the millionth
+            time. I've always been someone who enjoys building, learning, and
+            experimenting, whether that means going on a new life adventure, or
+            doing something as simple as building computers. I'm the kind of
+            person who gets energised by challenges and discovery. This mindset
+            has taken me from pursuing my Computer Science degree at KTH to
             completing an exchange semester at Monash University in Australia.
             Living and studying abroad exposed me to new ideas, cultures, and
             working styles, and made me realise how diversity and collaboration
@@ -27,11 +27,11 @@ export default function AboutPage() {
           />
         </div>
         <p className="text-center md:max-w-3xl max-w-sm">
-          Through my travels across Asia, I’ve been fascinated by how
-          differently each society integrates technology into daily life, from
-          mobile payment ecosystems in Southeast Asia to public infrastructure
-          systems in East Asia. I thus realised that technology should adapt to
-          people, not the other way around.
+          Throughout my travels across Asia, I was fascinated by how differently
+          each society integrates technology into their daily life, from the
+          mobile payment ecosystems in Southeast Asia to the public
+          infrastructure systems in East Asia. I thus realised that technology
+          should adapt to the people, not the other way around.
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-3">
           <img
@@ -40,17 +40,14 @@ export default function AboutPage() {
             className="h-90 rounded-2xl border-2 border-foreground object-cover"
           />
           <p className="text-center max-w-sm">
-            I’m passionate about finding ways that digital tools can make life
-            simpler, fairer, and more connected. While many see computer science
-            as boring and technical, I’ve always been drawn to its human side. I
-            love working with people. I thrive in multicultural and
-            interdisciplinary teams. I believe that in today’s world,
-            understanding technology alone is not sufficient, you also need to
-            understand people and context. That’s why I explore beyond my field,
-            from taking a psychology course at Monash, to joining weekly pub
-            quizzes where I get competitive about history questions. I learn
-            best by doing. I’m hungry for opportunities to apply what I know,
-            push my limits, and keep growing.
+            I'm passionate about finding ways that digital tools can make life
+            simpler, fairer, and more connected. While many may see Computer
+            Science as boring and technical, I've always been fascinated with
+            what it can do for people and how it promotes effective workflows.
+            Technologies such as Machine Learning and AI have the potential to
+            revolutionise how we live and work, and I intend on exploring this
+            further. As a Data Scientist, I'm hungry for new opportunities to
+            apply what I know, push my limits, and keep growing.
           </p>
         </div>
       </div>
