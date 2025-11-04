@@ -17,7 +17,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center md:items-start gap-3 max-w-sm">
             <p className="text-center">
               I am a MSc Computer Science student at KTH Royal Institute of
-              Technology, specializing in data science, machine learning and
+              Technology, specialising in data science, machine learning and
               software development.
             </p>
             <ContactLinks />
